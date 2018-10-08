@@ -31,7 +31,7 @@
         </ul>
         <a href="#" class="navbar-right">
         </a>
-        <a href="online_store/php/shopping_cart.php" class="btn btn-default navbar-btn navbar-right">
+        <a href="online_store/php/shopping_cart.php?" class="btn btn-default navbar-btn navbar-right">
             <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
         </a>
 
@@ -169,6 +169,8 @@
 
     var products = [];
 
+    var querystring = require('querystring');
+
     var product = {
         name: "",
         price: 0,
@@ -180,6 +182,7 @@
     };
     
     function addProduct(name, price) {
+
         product.setValues(name, price);
         products.push(product);
 
@@ -189,8 +192,8 @@
 
     $.ajax({
         type: "POST",
-        url: "online_store/php/shopping_cart.php",
-        data: { kvcArray : JSON.stringify(products)},
+        url: "online_store/php/shopping_cart.php?"+JSON.stringify(products),
+        data: { kvcArray : products},
         success: function() {
             alert("Success");
         }
