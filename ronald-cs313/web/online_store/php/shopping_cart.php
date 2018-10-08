@@ -12,13 +12,6 @@
 </head>
 <body>
 
-<div class="jumbotron">
-    <div class="container text-center">
-        <h1>The unusual store</h1>
-        <p>Nothing you need. All you want.</p>
-    </div>
-</div>
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
