@@ -19,7 +19,7 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="../../home_page.html">Products</a></li>
-            <li><a href="#">Deals</a></li>
+            <li><a href="../deals.html">Deals</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <a href="#" class="navbar-right">
