@@ -98,10 +98,10 @@
       <file leaf-file-name="teamActivity.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week5/teamActivity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-610">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="590">
+              <caret line="83" column="7" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
               <folding>
-                <marker date="1539733561604" expanded="true" signature="1123:1147" ph="SELECT * FRO... scriptures" />
+                <marker date="1539734162162" expanded="true" signature="1123:1147" ph="SELECT * FRO... scriptures" />
               </folding>
             </state>
           </provider>
@@ -151,7 +151,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="124" />
-    <option name="y" value="127" />
+    <option name="y" value="126" />
     <option name="width" value="960" />
     <option name="height" value="829" />
   </component>
@@ -264,17 +264,18 @@
       <workItem from="1538873616968" duration="13781000" />
       <workItem from="1539111317650" duration="1223000" />
       <workItem from="1539709653616" duration="1567000" />
-      <workItem from="1539732886240" duration="877000" />
+      <workItem from="1539732886240" duration="1118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22684000" />
+    <option name="totallyTimeSpent" value="22925000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="127" width="960" height="829" extended-state="0" />
+    <frame x="124" y="126" width="960" height="829" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -557,10 +558,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week5/teamActivity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-610">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="590">
+          <caret line="83" column="7" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
           <folding>
-            <marker date="1539733561604" expanded="true" signature="1123:1147" ph="SELECT * FRO... scriptures" />
+            <marker date="1539734162162" expanded="true" signature="1123:1147" ph="SELECT * FRO... scriptures" />
           </folding>
         </state>
       </provider>

@@ -72,12 +72,12 @@ exit;
     <div class="row">
         <div class="col-md-4 offset-md-4">
             <h1 class="display-3">Scripture Resources</h1>
-            <?php foreach($scriptures as $scripture) { ?>
+            <?php foreach($scriptures as $scripture): ?>
                 <p>
                     <strong><a href="/scripture?id={$scripture['id']}"><?= $scripture['book']; ?> <?= $scripture['chapter']; ?> : <?= $scripture['verse']; ?></strong></a> - "
                     <?= $scripture['content']; ?>"
                 </p>
-            <?php} ?>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
