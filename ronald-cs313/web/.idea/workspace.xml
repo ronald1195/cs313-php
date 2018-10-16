@@ -83,13 +83,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbConnection.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbConnection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week5/dbConnection.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding>
                 <marker date="1539710567910" expanded="true" signature="592:663" ph="SELECT syste... system_user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teamActivity.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week5/teamActivity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-610">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding>
+                <marker date="1539733561604" expanded="true" signature="1123:1147" ph="SELECT * FRO... scriptures" />
               </folding>
             </state>
           </provider>
@@ -123,6 +135,7 @@
         <option value="$PROJECT_DIR$/online_store/conformation.php" />
         <option value="$PROJECT_DIR$/online_store/php/shopping_cart.php" />
         <option value="$PROJECT_DIR$/week5/dbConnection.php" />
+        <option value="$PROJECT_DIR$/week5/teamActivity.php" />
       </list>
     </option>
   </component>
@@ -137,10 +150,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="123" />
-    <option name="y" value="25" />
+    <option name="x" value="124" />
+    <option name="y" value="127" />
     <option name="width" value="960" />
-    <option name="height" value="830" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
@@ -173,6 +186,28 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="web" type="cbb8eebc:String" user="web" />
               <item name="week5" type="cbb8eebc:String" user="week5" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="/" type="cbb8eebc:String" user="/" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="/" type="cbb8eebc:String" user="/" />
+              <item name="Users" type="cbb8eebc:String" user="Users" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="/" type="cbb8eebc:String" user="/" />
+              <item name="Users" type="cbb8eebc:String" user="Users" />
+              <item name="ronaldmunoz" type="cbb8eebc:String" user="ronaldmunoz" />
             </path>
           </expand>
           <select />
@@ -234,15 +269,15 @@
       <workItem from="1538873616968" duration="13781000" />
       <workItem from="1539111317650" duration="1223000" />
       <workItem from="1539709653616" duration="1567000" />
-      <workItem from="1539732886240" duration="160000" />
+      <workItem from="1539732886240" duration="692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21967000" />
+    <option name="totallyTimeSpent" value="22499000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="123" y="25" width="960" height="830" extended-state="0" />
+    <frame x="124" y="127" width="960" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -519,9 +554,19 @@
     <entry file="file://$PROJECT_DIR$/week5/dbConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
             <marker date="1539710567910" expanded="true" signature="592:663" ph="SELECT syste... system_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week5/teamActivity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-610">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding>
+            <marker date="1539733561604" expanded="true" signature="1123:1147" ph="SELECT * FRO... scriptures" />
           </folding>
         </state>
       </provider>
