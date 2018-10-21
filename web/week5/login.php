@@ -8,23 +8,25 @@
 
 if (isset($_POST['submit'])){
 
-    include dbConnect.php;
-
+    include 'dbConnect.php';
+/*
     $username = $_POST['lg_username'];
     $password = $_POST['lg_password'];
 
     if(empty($username) || empty($password)){
-        header("Location: login.html?login=empty");
+        header("Location: logIn.html?login=empty");
         exit();
 
     } else {
-        $sql = "SELECT * FROM system_user WHERE system_user_id = '$username'";
+        $sql = "SELECT * FROM system_user WHERE username = '$username'";
 
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
 
         if($resultCheck < 1){
-            header("Location: login.html?login=error");
+            //header("Location: logIn.html?login=error2");
+            echo 'User name used: '. $username . ' resultCheck = ' . $resultCheck;
+
             exit();
 
         } else {
@@ -34,7 +36,7 @@ if (isset($_POST['submit'])){
                 $hashedPwdCheck = password_verify($password, $row['password']);
 
                 if($hashedPwdCheck == false){
-                    header("Location: login.html?login=error");
+                    header("Location: logIn.html?login=error3");
                     exit();
                 } elseif ($hashedPwdCheck == true){
                     $_SESSION['u_id'] = $row['system_user_id'];
@@ -47,8 +49,8 @@ if (isset($_POST['submit'])){
             }
         }
     }
-
+*/
 } else {
-    header("Location: login.html?login=error");
+    header("Location: logIn.html?login=error1");
     exit();
 }
