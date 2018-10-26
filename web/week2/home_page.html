@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ronald's Home Page</title>
+    <link rel="stylesheet" href="home_page.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a>Home</a>
+    <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Assignments
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="hello.html">Hello World!</a>
+            <a href="team_activities/week2/w2.html">Week 2 Team Activity</a>
+            <a href="#">Week 3 Team Activity</a>
+            <a href="#">Assignment 2</a>
+            <a href="#">Assignment 3</a>
+        </div>
+    </div>
+
+</div>
+<h1 class="pageTitle">---- This is Ronald ! ----</h1>
+
+<div class="iwd">
+    <img src="/media/me.gif" class="picture1" >
+    <p class="description"> Hey there! <br /><br />
+                            I'm a computer science major here at BYU - Idaho. I focus on developing iOS applications
+                            for mobile devices and in SQL/PLSQL. I love coding and I've learned a lot since I started
+                            college. Now I'm a junior, expecting to be graduated by next summer or fall of 2020. After
+                            that the plan is to move to BYU and pursue a masters/phd degree in computer science and
+                            focus my career a little bit more in mobile development.</p>
+                         <p>Some things that I can tell you about me is that I'm from Guatemala, the most amazing country,
+                            okay maybe not but I still love it. I'm 22 years old (almost 23) and I've never been more single
+                            in my life than right now :) It's okay, but I'm thinking on postulating for ministering angel.
+                            I like things like long-boarding and road trips. I'm not an enemy of hikes but I love to watch movies
+                            and TV shows on netflix. Don't get confused though, I'm not the typical CS major, I say this because
+                            I dont like video games(something that apparently is like a religion in de CS department.)</p>
+
+    <img src="/media/orange-vector-brush-stroke.png" style="height: 400px; width: auto; z-index: -3; position: absolute; right: 0; top: 250px; opacity: 0.6">
+</div>
+<div class="iwd2">
+    <img src="/media/dunes.gif" class="picture2">
+    <p class="description2"> This is my latest adventure.<br /><br />
+                                                  I went to the dunes here in St. Anthony with my roomates and Maddie(my brother's
+                                                  girlfriend) because we wanted to go sand-boarding. It was super fun you should try it
+                                                    sometime soon. Be ready for the sand to get EVERYWHERE!</p>
+    <form action="home_page.php" method="get" style="float: left">
+        <input type="submit" value="CLick to see some PHP magic!">
+    </form>
+
+    <img src="/media/logo_swoosh.png" style="height: 300px; width: auto; z-index: -3; position: absolute; left: 0; top: 900px; opacity: 0.6">
+
+</div>
+
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

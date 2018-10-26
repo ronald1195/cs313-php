@@ -1,6 +1,5 @@
 html,
 body {
-    background: #efefef;
     padding: 10px;
     font-family: 'Varela Round';
 }
@@ -14,13 +13,13 @@ a:hover {
     text-decoration: none;
 }
 /*=== 3. Text Outside the Box ===*/
-.etc-login-form {
+/*.etc-login-form {
     color: #919191;
     padding: 10px 20px;
 }
 .etc-login-form p {
     margin-bottom: 5px;
-}
+}*/
 /*=== 4. Main Form ===*/
 .login-form-1 {
     max-width: 300px;

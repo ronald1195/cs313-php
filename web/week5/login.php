@@ -6,51 +6,44 @@
  * Time: 9:39 PM
  */
 
-if (isset($_POST['submit'])){
+if (isset($_POST['login-submit'])){
 
     include 'dbConnect.php';
-/*
-    $username = $_POST['lg_username'];
-    $password = $_POST['lg_password'];
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     if(empty($username) || empty($password)){
-        header("Location: logIn.html?login=empty");
+        header("Location: login.html?login=empty");
         exit();
 
     } else {
-        $sql = "SELECT * FROM system_user WHERE username = '$username'";
+        $statement = $db->prepare("SELECT * FROM system_user WHERE username = '$username'");
+        $statement->execute();
 
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
-
-        if($resultCheck < 1){
-            //header("Location: logIn.html?login=error2");
-            echo 'User name used: '. $username . ' resultCheck = ' . $resultCheck;
-
+        if($statement->rowCount() != 1){
+            header("Location: login.html?login=error2");
             exit();
 
         } else {
-            if($row = mysqli_fetch_assoc($result)){
-                //echo $row['system_user_id'];
 
-                $hashedPwdCheck = password_verify($password, $row['password']);
-
-                if($hashedPwdCheck == false){
-                    header("Location: logIn.html?login=error3");
+            $row = $statement->fetch(PDO::FETCH_ASSOC);
+            if($username == $row['username']){
+                if($password == $row['password']){
+                    header("Location: masterCommander.html");
                     exit();
-                } elseif ($hashedPwdCheck == true){
-                    $_SESSION['u_id'] = $row['system_user_id'];
-                    $_SESSION['u_username'] = $row['username'];
-
-                    header("Location: masterCommander.html?login=success");
+                } else {
+                    header("Location: login.html?login=missingMatchingPassword");
                     exit();
                 }
-
+            }else{
+                header("Location: login.html?login=missingMatchingUsername");
+                exit();
             }
+
         }
     }
-*/
 } else {
-    header("Location: logIn.html?login=error1");
+    header("Location: login.html?login=error1");
     exit();
 }

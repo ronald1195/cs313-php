@@ -29,7 +29,7 @@ try
     $db = substr($url["path"], 1);
     $conn = new mysqli($server, $username, $password, $db);
 */
-    echo 'Let\'s display some data from the database: ';
+/*    echo 'Let\'s display some data from the database: ';
 
     $statement = $db->prepare("SELECT * FROM system_user");
     $statement->execute();
@@ -44,7 +44,7 @@ try
         echo $row['email'] . '</strong>' . ' - ' . $row['username'];
         echo '</p>';
     }
-
+*/
 }
 catch (PDOException $ex)
 {
