@@ -2,27 +2,27 @@
 --
 --
 CREATE TABLE system_user (
-	system_user_id  	INT 					CONSTRAINT nn_su_1 	NOT NULL,
-	username 					VARCHAR(80) 	CONSTRAINT nn_su_2 	NOT NULL,
-	password 					VARCHAR(80) 	CONSTRAINT nn_su_3 	NOT NULL,
-	email							VARCHAR(80)		CONSTRAINT nn_su_4 	NOT NULL,
-	first_name				VARCHAR(80) 	CONSTRAINT nn_su_5 	NOT NULL,
-	last_name					VARCHAR(80)	 	CONSTRAINT nn_su_6 	NOT NULL,
-	created_by				INT  					CONSTRAINT nn_su_7 	NOT NULL,
-	creation_date	   	DATE         	CONSTRAINT nn_su_8 	NOT NULL,
-	last_updated_by   INT  					CONSTRAINT nn_su_9 	NOT NULL,
-	last_update_date  DATE 					CONSTRAINT nn_su_10 NOT NULL,
-	CONSTRAINT pk_su_1 PRIMARY KEY (system_user_id)
+	system_user_id   SERIAL  	 CONSTRAINT nn_su_1 	NOT NULL,
+	username 	     VARCHAR(80) CONSTRAINT nn_su_2 	NOT NULL,
+	password 	     VARCHAR(80) CONSTRAINT nn_su_3 	NOT NULL,
+	email		     VARCHAR(80) CONSTRAINT nn_su_4 	NOT NULL,
+	first_name	     VARCHAR(80) CONSTRAINT nn_su_5 	NOT NULL,
+	last_name	     VARCHAR(80) CONSTRAINT nn_su_6 	NOT NULL,
+	created_by	     INT  		 CONSTRAINT nn_su_7 	NOT NULL,
+	creation_date    DATE        CONSTRAINT nn_su_8 	NOT NULL,
+	last_updated_by  INT  		 CONSTRAINT nn_su_9 	NOT NULL,
+	last_update_date DATE 		 CONSTRAINT nn_su_10 NOT NULL,
+	CONSTRAINT  pk_su_1  PRIMARY KEY  (system_user_id)
 );
 
-CREATE SEQUENCE system_user_s1 START 1001;
+CREATE SEQUENCE system_user_s1 START WITH 1001;
 
 INSERT INTO system_user
 VALUES(
 	nextval('system_user_s1')
-,	'ronald1195'
+,   'ronald1195'
 ,   'cangetin'
-,		'mun16012@byui.edu'
+,   'mun16012@byui.edu'
 ,   'Ronald'
 ,   'Muñoz'
 ,   1001
@@ -30,6 +30,7 @@ VALUES(
 ,   1001
 ,   current_date
 );
+
 
 ALTER TABLE system_user
 ADD	CONSTRAINT fk_su_1 FOREIGN KEY (created_by) REFERENCES system_user(system_user_id),
@@ -52,6 +53,16 @@ CREATE TABLE client(
 	);
 
 	CREATE SEQUENCE client_s1 START 1001;
+
+INSERT INTO client
+VALUES(
+	nextval('client_s1')
+,   'BYU'
+,   1001
+,   current_date
+,   1001
+,   current_date
+);
 
 --CREATE THE PROJECT TABLE
 --
@@ -76,6 +87,21 @@ CREATE TABLE project (
 
 CREATE SEQUENCE project_s1 START 1001;
 
+INSERT INTO project
+VALUES(
+	nextval('project_s1')
+,   'Potato_C1'
+,   'potato'
+,   (SELECT client_id FROM client WHERE client_name = 'BYU')
+,	'C1_fungicide'
+,   current_date
+,   current_date + 30
+,   1001
+,   current_date
+,   1001
+,   current_date
+);
+
 --CREATE THE PROJECT_DETAIL TABLE
 --
 --
@@ -98,6 +124,32 @@ CREATE TABLE project_detail (
 
 CREATE SEQUENCE pd_s1 START 1001;
 
+INSERT INTO project_detail
+VALUES(
+	nextval('pd_s1')
+,   currval('project_s1')
+,   (SELECT system_user_id FROM system_user WHERE username = 'ronald1195')
+,   'PH Levels'
+,   '4'
+,   1001
+,   current_date
+,   1001
+,   current_date
+);
+
+INSERT INTO project_detail
+VALUES(
+	nextval('pd_s1')
+,   1001
+,   (SELECT system_user_id FROM system_user WHERE username = 'ronald1195')
+,   'Control'
+,   '4'
+,   1001
+,   current_date
+,   1001
+,   current_date
+);
+
 --CREATE THE OBSERVATION TABLE
 --
 --
@@ -116,3 +168,14 @@ CREATE TABLE observation (
 );
 
 CREATE SEQUENCE observation_s1 START 1001;
+
+INSERT INTO observation
+VALUES(
+	nextval('observation_s1')
+,   (SELECT project_detail_id from project_detail, project WHERE project.project_id = project_detail.project_id AND project_detail.analyst = 1001)
+,   'Test Data'
+,   1001
+,   current_date
+,   1001
+,   current_date
+);

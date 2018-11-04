@@ -1,0 +1,12 @@
+.jumbotron{
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.subtitle{
+    margin-left: 100px;
+}
+
+input[type=text] {
+    border: none;
+}
